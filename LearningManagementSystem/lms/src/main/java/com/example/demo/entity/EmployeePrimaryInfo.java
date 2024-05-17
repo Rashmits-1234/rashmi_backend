@@ -14,6 +14,11 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.List;
@@ -21,7 +26,10 @@ import java.util.Set;
 
 import com.example.demo.enums.Designation;
 import com.example.demo.enums.Gender;
-
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "employee_primary_info")
 public class EmployeePrimaryInfo {
@@ -57,6 +65,96 @@ public class EmployeePrimaryInfo {
         inverseJoinColumns = @JoinColumn(name = "technical_skill_id")
     )
     private Set<TechnicalSkills> technicalSkills = new HashSet<>();
+
+	public Object getEmployeeName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getDateOfJoining() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getDateOfBirth() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getEmail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getBloodGroup() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getDesignation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setEmployeeName(Object employeeName2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setDateOfJoining(Object dateOfJoining2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setDateOfBirth(Object dateOfBirth2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setEmail(Object email2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setDesignation(Object designation2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setBloodGroup(Object bloodGroup2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Object getGender() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getNationality() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getEmployeeStatus() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setNationality(Object nationality2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setGender(Object gender2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setEmployeeStatus(Object employeeStatus2) {
+		// TODO Auto-generated method stub
+		
+	}
 
    
 }
